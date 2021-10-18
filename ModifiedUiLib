@@ -1,0 +1,1357 @@
+function CreateWindow(Title, Color)
+    
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/PolarWasHere/UselessStuff/main/randomness"))()
+    
+    if Color == nil then
+        Color = Color3.fromRGB(0, 68, 255)
+    end
+    
+    ColorChoice = Color
+    
+    for i, v in pairs(game:GetService("CoreGui"):GetChildren()) do
+        if v.Name == "Arcticv2" then
+            v:Destroy()
+        end
+    end
+    
+    local Arcticv2 = Instance.new("ScreenGui")
+    local Frame = Instance.new("Frame")
+    local UICorner = Instance.new("UICorner")
+    local Hotbar = Instance.new("Frame")
+    local UICorner_2 = Instance.new("UICorner")
+    local ImageButton = Instance.new("ImageButton")
+    local TextLabel = Instance.new("TextLabel")
+    local ImageButton_2 = Instance.new("ImageButton")
+    local Buttons = Instance.new("Frame")
+    local Handler = Instance.new("ScrollingFrame")
+    local UIListLayout = Instance.new("UIListLayout")
+    local UICorner_3 = Instance.new("UICorner")
+    local Menus = Instance.new("Frame")
+    
+    Arcticv2.Name = "Arcticv2"
+    Arcticv2.Parent = game:WaitForChild("CoreGui")
+    Arcticv2.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+    
+    Frame.Parent = Arcticv2
+    Frame.BackgroundColor3 = Color3.fromRGB(6, 6, 6)
+    Frame.BorderSizePixel = 0
+    Frame.Position = UDim2.new(0.311278194, 0, 0.288372099, 0)
+    Frame.Size = UDim2.new(0, 501, 0, 273)
+    
+    UICorner.CornerRadius = UDim.new(0, 4)
+    UICorner.Parent = Frame
+    
+    Hotbar.Name = "Hotbar"
+    Hotbar.Parent = Frame
+    Hotbar.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+    Hotbar.BorderSizePixel = 0
+    Hotbar.Size = UDim2.new(0, 501, 0, 27)
+    
+    UICorner_2.CornerRadius = UDim.new(0, 4)
+    UICorner_2.Parent = Hotbar
+    
+    ImageButton.Parent = Hotbar
+    ImageButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+    ImageButton.BackgroundTransparency = 1.000
+    ImageButton.BorderSizePixel = 0
+    ImageButton.Position = UDim2.new(0.952095807, 0, 0.259259254, 0)
+    ImageButton.Size = UDim2.new(0, 13, 0, 13)
+    ImageButton.Image = "http://www.roblox.com/asset/?id=6826758926"
+    
+    TextLabel.Parent = Hotbar
+    TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+    TextLabel.BackgroundTransparency = 1.000
+    TextLabel.BorderSizePixel = 0
+    TextLabel.Position = UDim2.new(0.021956088, 0, 0, 0)
+    TextLabel.Size = UDim2.new(0, 159, 0, 27)
+    TextLabel.Font = Enum.Font.GothamSemibold
+    TextLabel.Text = Title
+    TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+    TextLabel.TextSize = 14.000
+    TextLabel.TextXAlignment = Enum.TextXAlignment.Left
+    
+    ImageButton_2.Parent = Hotbar
+    ImageButton_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+    ImageButton_2.BackgroundTransparency = 1.000
+    ImageButton_2.BorderSizePixel = 0
+    ImageButton_2.Position = UDim2.new(0.902195632, 0, 0.185185179, 0)
+    ImageButton_2.Size = UDim2.new(0, 16, 0, 16)
+    ImageButton_2.Image = "http://www.roblox.com/asset/?id=6826750952"
+    
+    Buttons.Name = "Buttons"
+    Buttons.Parent = Frame
+    Buttons.BackgroundColor3 = Color3.fromRGB(8, 8, 8)
+    Buttons.BorderSizePixel = 0
+    Buttons.Position = UDim2.new(0, 0, 0.0989011005, 0)
+    Buttons.Size = UDim2.new(0, 149, 0, 246)
+    
+    Handler.Name = "Handler"
+    Handler.Parent = Buttons
+    Handler.Active = true
+    Handler.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+    Handler.BackgroundTransparency = 1.000
+    Handler.BorderSizePixel = 0
+    Handler.Position = UDim2.new(0, 0, 0.0284552854, 0)
+    Handler.Size = UDim2.new(0, 149, 0, 232)
+    Handler.ScrollBarThickness = 0
+    
+    UIListLayout.Parent = Handler
+    UIListLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
+    UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+    UIListLayout.Padding = UDim.new(0, 4)
+    
+    UICorner_3.CornerRadius = UDim.new(0, 4)
+    UICorner_3.Parent = Buttons
+    
+    Menus.Name = "Menus"
+    Menus.Parent = Frame
+    Menus.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+    Menus.BackgroundTransparency = 1.000
+    Menus.BorderSizePixel = 0
+    Menus.Position = UDim2.new(0.297405183, 0, 0.0989011005, 0)
+    Menus.Size = UDim2.new(0, 352, 0, 246)
+    
+    -- Scripts:
+    
+    local function TKWU_fake_script() -- ImageButton.LocalScript 
+        local script = Instance.new('LocalScript', ImageButton)
+    
+        script.Parent.MouseButton1Down:Connect(function()
+            script.Parent.Parent.Parent.Parent:Destroy()
+        end)
+    end
+    coroutine.wrap(TKWU_fake_script)()
+    local function IHDHOA_fake_script() -- ImageButton_2.LocalScript 
+        local script = Instance.new('LocalScript', ImageButton_2)
+    
+        game:GetService("Players").LocalPlayer:GetMouse().KeyDown:Connect(function(Key)
+            if Key == "j" then
+                if script.Parent.Parent.Parent.Visible == true then
+                    script.Parent.Parent.Parent.Visible = false 
+                    else
+                    script.Parent.Parent.Parent.Visible = true
+                end
+            end
+        end)
+    
+        script.Parent.MouseButton1Down:Connect(function()
+            script.Parent.Parent.Parent.Visible = false
+        end)
+    end
+    coroutine.wrap(IHDHOA_fake_script)()
+    local function VLGG_fake_script() -- Frame.SmoothDrag 
+        local script = Instance.new('LocalScript', Frame)
+    
+        local Drag = script.Parent
+        gsCoreGui = game:GetService("CoreGui")
+        gsTween = game:GetService("TweenService")
+        local UserInputService = game:GetService("UserInputService")
+            local dragging
+            local dragInput
+            local dragStart
+            local startPos
+            local function update(input)
+                local delta = input.Position - dragStart
+                local dragTime = 0.04
+                local SmoothDrag = {}
+                SmoothDrag.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+                local dragSmoothFunction = gsTween:Create(Drag, TweenInfo.new(dragTime, Enum.EasingStyle.Sine, Enum.EasingDirection.InOut), SmoothDrag)
+                dragSmoothFunction:Play()
+            end
+            Drag.InputBegan:Connect(function(input)
+                if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+                    dragging = true
+                    dragStart = input.Position
+                    startPos = Drag.Position
+                    input.Changed:Connect(function()
+                        if input.UserInputState == Enum.UserInputState.End then
+                            dragging = false
+                        end
+                    end)
+                end
+            end)
+            Drag.InputChanged:Connect(function(input)
+                if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+                    dragInput = input
+                end
+            end)
+            UserInputService.InputChanged:Connect(function(input)
+                if input == dragInput and dragging and Drag.Size then
+                    update(input)
+                end
+            end)
+        
+    end
+    coroutine.wrap(VLGG_fake_script)()
+    
+        function CreateMenu(Name2)
+    local ScrollingFrame = Instance.new("ScrollingFrame")
+    local UIListLayout = Instance.new("UIListLayout")
+    
+    ScrollingFrame.Name = Name2
+    ScrollingFrame.Parent = Menus
+    ScrollingFrame.Active = true
+    ScrollingFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+    ScrollingFrame.BackgroundTransparency = 1.000
+    ScrollingFrame.BorderSizePixel = 0
+    ScrollingFrame.Position = UDim2.new(0, 0, 0.0284552854, 0)
+    ScrollingFrame.Size = UDim2.new(0, 352, 0, 232)
+    ScrollingFrame.ScrollBarThickness = 0
+    ScrollingFrame.AutomaticCanvasSize = Enum.AutomaticSize.Y
+    ScrollingFrame.Visible = false
+    
+    UIListLayout.Parent = ScrollingFrame
+    UIListLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
+    UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+    UIListLayout.Padding = UDim.new(0, 4)
+    
+    local TextButton = Instance.new("TextButton")
+    local UICorner = Instance.new("UICorner")
+    
+    TextButton.Parent = Handler
+    TextButton.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+    TextButton.BorderSizePixel = 0
+    TextButton.Position = UDim2.new(0.0604026839, 0, 0, 0)
+    TextButton.Size = UDim2.new(0, 131, 0, 23)
+    TextButton.Font = Enum.Font.GothamSemibold
+    TextButton.Text = Name2
+    TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+    TextButton.TextSize = 12.000
+    
+    UICorner.CornerRadius = UDim.new(0, 4)
+    UICorner.Parent = TextButton
+    
+    local function YIZTF_fake_script() -- TextButton.LocalScript 
+        local script = Instance.new('LocalScript', TextButton)
+    
+        script.Parent.MouseButton1Down:Connect(function()
+            for i, v in pairs(script.Parent.Parent.Parent.Parent.Menus:GetChildren()) do
+                if v.Name == script.Parent.Text then
+                    v.Visible = true
+                else
+                    if v:IsA("ScrollingFrame") then
+                        v.Visible = false
+                    end
+                end
+            end
+        end)
+    end
+    coroutine.wrap(YIZTF_fake_script)()
+    
+    local function BZPYUZC_fake_script() -- TextButton.LocalScript 
+        local script = Instance.new('LocalScript', TextButton)
+    
+        script.Parent.MouseButton1Down:Connect(function()
+            local Sound = Instance.new("Sound", game:GetService("Workspace"))
+            Sound.SoundId = "rbxassetid://421058925"
+            Sound:Play()
+            spawn(function()
+                wait(1.3)
+                Sound:Destroy()
+            end)
+        end)
+    end
+    coroutine.wrap(BZPYUZC_fake_script)()
+    
+    
+        end
+    
+    function CreateButton(Title, Menu, callback)
+    local Regular = Instance.new("TextButton")
+    local UICorner = Instance.new("UICorner")
+    local TextLabel = Instance.new("TextLabel")
+    
+    Regular.Name = Title
+    Regular.Parent = Menus[Menu]
+    Regular.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+    Regular.BorderSizePixel = 0
+    Regular.Position = UDim2.new(0.0454545468, 0, 0, 0)
+    Regular.Size = UDim2.new(0, 336, 0, 23)
+    Regular.Font = Enum.Font.SourceSans
+    Regular.Text = ""
+    Regular.TextColor3 = Color3.fromRGB(255, 255, 255)
+    Regular.TextSize = 12.000
+    
+    UICorner.CornerRadius = UDim.new(0, 4)
+    UICorner.Parent = Regular
+    
+    TextLabel.Text = Title
+    TextLabel.Parent = Regular
+    TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+    TextLabel.BackgroundTransparency = 1.000
+    TextLabel.BorderColor3 = Color3.fromRGB(27, 42, 53)
+    TextLabel.BorderSizePixel = 0
+    TextLabel.Position = UDim2.new(0.0386904776, 0, 0, 0)
+    TextLabel.Size = UDim2.new(0, 148, 0, 23)
+    TextLabel.Font = Enum.Font.GothamSemibold
+    TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+    TextLabel.TextSize = 12.000
+    TextLabel.TextXAlignment = Enum.TextXAlignment.Left
+    
+    -- Scripts:
+    
+    local function NGEYAOF_fake_script() -- Regular.LocalScript 
+        local script = Instance.new('LocalScript', Regular)
+    
+        script.Parent.MouseButton1Down:Connect(function()
+            local Sound = Instance.new("Sound", game:GetService("Workspace"))
+            Sound.SoundId = "rbxassetid://421058925"
+            Sound:Play()
+            spawn(function()
+                wait(1.3)
+                Sound:Destroy()
+            end)
+        end)
+    end
+    coroutine.wrap(NGEYAOF_fake_script)()
+    
+    Regular.MouseButton1Down:Connect(function()
+        pcall(callback)
+    end)
+    
+        end
+    
+        function CreateSearchButton(Title, Menu, callback)
+            -- Gui to Lua
+    -- Version: 3.2
+    
+    -- Instances:
+    
+    local Search = Instance.new("TextButton")
+    local UICorner = Instance.new("UICorner")
+    local TextLabel = Instance.new("TextLabel")
+    local TextBox = Instance.new("TextBox")
+    local UICorner_2 = Instance.new("UICorner")
+    
+    --Properties:
+    
+    Search.Name = Title
+    Search.Parent = Menus[Menu]
+    Search.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+    Search.BorderSizePixel = 0
+    Search.Position = UDim2.new(0.0454545468, 0, 0, 0)
+    Search.Size = UDim2.new(0, 336, 0, 23)
+    Search.Font = Enum.Font.SourceSans
+    Search.Text = ""
+    Search.TextColor3 = Color3.fromRGB(255, 255, 255)
+    Search.TextSize = 12.000
+    
+    UICorner.CornerRadius = UDim.new(0, 4)
+    UICorner.Parent = Search
+    
+    TextLabel.Parent = Search
+    TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+    TextLabel.BackgroundTransparency = 1.000
+    TextLabel.BorderColor3 = Color3.fromRGB(27, 42, 53)
+    TextLabel.BorderSizePixel = 0
+    TextLabel.Position = UDim2.new(0.0386904776, 0, 0, 0)
+    TextLabel.Size = UDim2.new(0, 148, 0, 23)
+    TextLabel.Font = Enum.Font.GothamSemibold
+    TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+    TextLabel.TextSize = 12.000
+    TextLabel.TextXAlignment = Enum.TextXAlignment.Left
+    TextLabel.Text = Title
+    
+    TextBox.Parent = Search
+    TextBox.BackgroundColor3 = Color3.fromRGB(6, 6, 6)
+    TextBox.Position = UDim2.new(0.565547585, 0, 0.130000234, 0)
+    TextBox.Size = UDim2.new(0, 137, 0, 16)
+    TextBox.Font = Enum.Font.GothamSemibold
+    TextBox.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
+    TextBox.PlaceholderText = "Search Here"
+    TextBox.Text = ""
+    TextBox.TextColor3 = Color3.fromRGB(255, 255, 255)
+    TextBox.TextSize = 10.000
+    
+    UICorner_2.CornerRadius = UDim.new(0, 4)
+    UICorner_2.Parent = TextBox
+    
+    -- Scripts:
+    
+    local function HBKI_fake_script() -- Search.LocalScript 
+        local script = Instance.new('LocalScript', Search)
+    
+        script.Parent.MouseButton1Down:Connect(function()
+            local Sound = Instance.new("Sound", game:GetService("Workspace"))
+            Sound.SoundId = "rbxassetid://421058925"
+            Sound:Play()
+            spawn(function()
+                wait(1.3)
+                Sound:Destroy()
+            end)
+        end)
+    end
+    coroutine.wrap(HBKI_fake_script)()
+        Search.MouseButton1Down:Connect(function()
+            pcall(callback, TextBox.Text)
+            end)
+        end
+    
+        function CreateToggle(Title, Menu, VarToToggle, callback)
+            local Toggles = Instance.new("TextButton")
+    local UICorner = Instance.new("UICorner")
+    local TextLabel = Instance.new("TextLabel")
+    local Frame = Instance.new("Frame")
+    local UICorner_2 = Instance.new("UICorner")
+    
+    Toggles.Name = Title
+    Toggles.Parent = Menus[Menu]
+    Toggles.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+    Toggles.BorderSizePixel = 0
+    Toggles.Position = UDim2.new(0.0454545468, 0, 0, 0)
+    Toggles.Size = UDim2.new(0, 336, 0, 23)
+    Toggles.Font = Enum.Font.SourceSans
+    Toggles.Text = ""
+    Toggles.TextColor3 = Color3.fromRGB(255, 255, 255)
+    Toggles.TextSize = 12.000
+    
+    UICorner.CornerRadius = UDim.new(0, 4)
+    UICorner.Parent = Toggles
+    
+    TextLabel.Parent = Toggles
+    TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+    TextLabel.BackgroundTransparency = 1.000
+    TextLabel.BorderColor3 = Color3.fromRGB(27, 42, 53)
+    TextLabel.BorderSizePixel = 0
+    TextLabel.Position = UDim2.new(0.0386904776, 0, 0, 0)
+    TextLabel.Size = UDim2.new(0, 148, 0, 23)
+    TextLabel.Font = Enum.Font.GothamSemibold
+    TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+    TextLabel.TextSize = 12.000
+    TextLabel.TextXAlignment = Enum.TextXAlignment.Left
+    TextLabel.Text = Title
+    
+    Frame.Parent = Toggles
+    Frame.BackgroundColor3 = Color3.fromRGB(6, 6, 6)
+    Frame.Position = UDim2.new(0.758928597, 0, 0.130434781, 0)
+    Frame.Size = UDim2.new(0, 72, 0, 16)
+    
+    UICorner_2.CornerRadius = UDim.new(0, 4)
+    UICorner_2.Parent = Frame
+    
+    -- Scripts:
+    
+    local function XLHDTBP_fake_script() -- Toggles.LocalScript 
+        local script = Instance.new('LocalScript', Toggles)
+    
+        script.Parent.MouseButton1Down:Connect(function()
+            local Sound = Instance.new("Sound", game:GetService("Workspace"))
+            Sound.SoundId = "rbxassetid://421058925"
+            Sound:Play()
+            spawn(function()
+                wait(1.3)
+                Sound:Destroy()
+            end)
+        end)
+    end
+    coroutine.wrap(XLHDTBP_fake_script)()
+    local function IYJE_fake_script() -- Toggles.LocalScript 
+        local script = Instance.new('LocalScript', Toggles)
+        local var = false
+        script.Parent.MouseButton1Down:Connect(function()
+            if var == false then
+                var = true
+                local ColorTween = {}
+                ColorTween.BackgroundColor3 = ColorChoice
+                local ColorInfo = TweenInfo.new(0.2)
+                local ColorToTween = game:GetService("TweenService"):Create(script.Parent.Frame, ColorInfo, ColorTween)
+                ColorToTween:Play()
+            else
+                var = false
+                local ColorTween = {}
+                ColorTween.BackgroundColor3 = Color3.fromRGB(6, 6, 6)
+                local ColorInfo = TweenInfo.new(0.2)
+                local ColorToTween = game:GetService("TweenService"):Create(script.Parent.Frame, ColorInfo, ColorTween)
+                ColorToTween:Play()
+            end
+        end)
+    end
+    coroutine.wrap(IYJE_fake_script)()
+            Toggles.MouseButton1Down:Connect(function()
+                pcall(callback)
+            end)
+        end
+    
+        function CreateToggleSearch(Title, Menu, VarToToggle, callback)
+    local SearchToggles = Instance.new("TextButton")
+    local UICorner = Instance.new("UICorner")
+    local TextLabel = Instance.new("TextLabel")
+    local TextBox = Instance.new("TextBox")
+    local UICorner_2 = Instance.new("UICorner")
+    local Frame = Instance.new("Frame")
+    local UICorner_3 = Instance.new("UICorner")
+    
+    SearchToggles.Name = Title
+    SearchToggles.Parent = Menus[Menu]
+    SearchToggles.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+    SearchToggles.BorderSizePixel = 0
+    SearchToggles.Position = UDim2.new(0.0454545468, 0, 0, 0)
+    SearchToggles.Size = UDim2.new(0, 336, 0, 23)
+    SearchToggles.Font = Enum.Font.SourceSans
+    SearchToggles.Text = ""
+    SearchToggles.TextColor3 = Color3.fromRGB(255, 255, 255)
+    SearchToggles.TextSize = 12.000
+    
+    UICorner.CornerRadius = UDim.new(0, 4)
+    UICorner.Parent = SearchToggles
+    
+    TextLabel.Parent = SearchToggles
+    TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+    TextLabel.BackgroundTransparency = 1.000
+    TextLabel.BorderColor3 = Color3.fromRGB(27, 42, 53)
+    TextLabel.BorderSizePixel = 0
+    TextLabel.Position = UDim2.new(0.0386904776, 0, 0, 0)
+    TextLabel.Size = UDim2.new(0, 148, 0, 23)
+    TextLabel.Font = Enum.Font.GothamSemibold
+    TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+    TextLabel.TextSize = 12.000
+    TextLabel.TextXAlignment = Enum.TextXAlignment.Left
+    TextLabel.Text = Title
+    
+    TextBox.Parent = SearchToggles
+    TextBox.BackgroundColor3 = Color3.fromRGB(6, 6, 6)
+    TextBox.Position = UDim2.new(0.416738063, 0, 0.129999578, 0)
+    TextBox.Size = UDim2.new(0, 108, 0, 16)
+    TextBox.Font = Enum.Font.GothamSemibold
+    TextBox.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
+    TextBox.PlaceholderText = "Input Here"
+    TextBox.Text = ""
+    TextBox.TextColor3 = Color3.fromRGB(255, 255, 255)
+    TextBox.TextSize = 10.000
+    TextBox.TextWrapped = true
+    
+    UICorner_2.CornerRadius = UDim.new(0, 4)
+    UICorner_2.Parent = TextBox
+    
+    Frame.Parent = SearchToggles
+    Frame.BackgroundColor3 = Color3.fromRGB(6, 6, 6)
+    Frame.Position = UDim2.new(0.758928597, 0, 0.130434781, 0)
+    Frame.Size = UDim2.new(0, 72, 0, 16)
+    
+    UICorner_3.CornerRadius = UDim.new(0, 4)
+    UICorner_3.Parent = Frame
+    
+    -- Scripts:
+    
+    local function YFIGB_fake_script() -- SearchToggles.LocalScript 
+        local script = Instance.new('LocalScript', SearchToggles)
+    
+        script.Parent.MouseButton1Down:Connect(function()
+            local Sound = Instance.new("Sound", game:GetService("Workspace"))
+            Sound.SoundId = "rbxassetid://421058925"
+            Sound:Play()
+            spawn(function()
+                wait(1.3)
+                Sound:Destroy()
+            end)
+        end)
+    end
+    coroutine.wrap(YFIGB_fake_script)()
+    local function FQZTBR_fake_script() -- SearchToggles.LocalScript 
+        local script = Instance.new('LocalScript', SearchToggles)
+    
+        local var = false
+        script.Parent.MouseButton1Down:Connect(function()
+            if var == false then
+                var = true
+                local ColorTween = {}
+                ColorTween.BackgroundColor3 = ColorChoice
+                local ColorInfo = TweenInfo.new(0.2)
+                local ColorToTween = game:GetService("TweenService"):Create(script.Parent.Frame, ColorInfo, ColorTween)
+                ColorToTween:Play()
+            else
+                var = false
+                local ColorTween = {}
+                ColorTween.BackgroundColor3 = Color3.fromRGB(6, 6, 6)
+                local ColorInfo = TweenInfo.new(0.2)
+                local ColorToTween = game:GetService("TweenService"):Create(script.Parent.Frame, ColorInfo, ColorTween)
+                ColorToTween:Play()
+            end
+        end)
+    end
+    coroutine.wrap(FQZTBR_fake_script)()
+    
+            SearchToggles.MouseButton1Down:Connect(function()
+                pcall(callback, TextBox.Text)
+            end)
+        end
+        function CreateValueButton(Title, Menu, Custom, callback)
+    
+            local NumberValues = Instance.new("TextButton")
+            local UICorner = Instance.new("UICorner")
+            local TextLabel = Instance.new("TextLabel")
+            local TextBox = Instance.new("TextBox")
+            local UICorner_2 = Instance.new("UICorner")
+            
+            NumberValues.Name = Title
+            NumberValues.Parent = Menus[Menu]
+            NumberValues.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+            NumberValues.BorderSizePixel = 0
+            NumberValues.Position = UDim2.new(0.0454545468, 0, 0, 0)
+            NumberValues.Size = UDim2.new(0, 336, 0, 23)
+            NumberValues.Font = Enum.Font.SourceSans
+            NumberValues.Text = ""
+            NumberValues.TextColor3 = Color3.fromRGB(255, 255, 255)
+            NumberValues.TextSize = 12.000
+            
+            UICorner.CornerRadius = UDim.new(0, 4)
+            UICorner.Parent = NumberValues
+            
+            TextLabel.Parent = NumberValues
+            TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+            TextLabel.BackgroundTransparency = 1.000
+            TextLabel.BorderColor3 = Color3.fromRGB(27, 42, 53)
+            TextLabel.BorderSizePixel = 0
+            TextLabel.Position = UDim2.new(0.0386904776, 0, 0, 0)
+            TextLabel.Size = UDim2.new(0, 148, 0, 23)
+            TextLabel.Font = Enum.Font.GothamSemibold
+            TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+            TextLabel.TextSize = 12.000
+            TextLabel.TextXAlignment = Enum.TextXAlignment.Left
+            TextLabel.Text = Title
+            
+            TextBox.Parent = NumberValues
+            TextBox.BackgroundColor3 = Color3.fromRGB(6, 6, 6)
+            TextBox.Position = UDim2.new(0.651857138, 0, 0.129999995, 0)
+            TextBox.Size = UDim2.new(0, 108, 0, 16)
+            TextBox.Font = Enum.Font.GothamSemibold
+            TextBox.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
+            TextBox.PlaceholderText = Custom
+            TextBox.Text = ""
+            TextBox.TextColor3 = Color3.fromRGB(255, 255, 255)
+            TextBox.TextSize = 10.000
+            
+            UICorner_2.CornerRadius = UDim.new(0, 4)
+            UICorner_2.Parent = TextBox
+            
+            -- Scripts:
+            
+            local function AVOE_fake_script() -- NumberValues.LocalScript 
+                local script = Instance.new('LocalScript', NumberValues)
+            
+                script.Parent.MouseButton1Down:Connect(function()
+                    local Sound = Instance.new("Sound", game:GetService("Workspace"))
+                    Sound.SoundId = "rbxassetid://421058925"
+                    Sound:Play()
+                    spawn(function()
+                        wait(1.3)
+                        Sound:Destroy()
+                    end)
+                end)
+            end
+                coroutine.wrap(AVOE_fake_script)()
+                NumberValues.MouseButton1Down:Connect(function()
+                    pcall(callback, tonumber(TextBox.Text))
+                end)
+            end
+            function CreateNumberToggle(Title, Menu, CustomText, callback)
+
+                local NumberToggles = Instance.new("TextButton")
+                local UICorner = Instance.new("UICorner")
+                local TextLabel = Instance.new("TextLabel")
+                local TextBox = Instance.new("TextBox")
+                local UICorner_2 = Instance.new("UICorner")
+                local Frame = Instance.new("Frame")
+                local UICorner_3 = Instance.new("UICorner")
+                
+                NumberToggles.Name = Title
+                NumberToggles.Parent = Menus[Menu]
+                NumberToggles.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+                NumberToggles.BorderSizePixel = 0
+                NumberToggles.Position = UDim2.new(0.0454545468, 0, 0, 0)
+                NumberToggles.Size = UDim2.new(0, 336, 0, 23)
+                NumberToggles.Font = Enum.Font.SourceSans
+                NumberToggles.Text = ""
+                NumberToggles.TextColor3 = Color3.fromRGB(255, 255, 255)
+                NumberToggles.TextSize = 12.000
+                
+                UICorner.CornerRadius = UDim.new(0, 4)
+                UICorner.Parent = NumberToggles
+                
+                TextLabel.Parent = NumberToggles
+                TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+                TextLabel.BackgroundTransparency = 1.000
+                TextLabel.BorderColor3 = Color3.fromRGB(27, 42, 53)
+                TextLabel.BorderSizePixel = 0
+                TextLabel.Position = UDim2.new(0.0386904776, 0, 0, 0)
+                TextLabel.Size = UDim2.new(0, 148, 0, 23)
+                TextLabel.Font = Enum.Font.GothamSemibold
+                TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+                TextLabel.TextSize = 12.000
+                    TextLabel.TextXAlignment = Enum.TextXAlignment.Left
+                    TextLabel.Text = Title
+                
+                TextBox.Parent = NumberToggles
+                TextBox.BackgroundColor3 = Color3.fromRGB(6, 6, 6)
+                TextBox.Position = UDim2.new(0.416738093, 0, 0.129999995, 0)
+                TextBox.Size = UDim2.new(0, 108, 0, 16)
+                TextBox.Font = Enum.Font.GothamSemibold
+                TextBox.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
+                TextBox.PlaceholderText = CustomText
+                TextBox.Text = ""
+                TextBox.TextColor3 = Color3.fromRGB(255, 255, 255)
+                TextBox.TextSize = 10.000
+                
+                UICorner_2.CornerRadius = UDim.new(0, 4)
+                UICorner_2.Parent = TextBox
+                
+                Frame.Parent = NumberToggles
+                Frame.BackgroundColor3 = Color3.fromRGB(6, 6, 6)
+                Frame.Position = UDim2.new(0.758928597, 0, 0.130434781, 0)
+                Frame.Size = UDim2.new(0, 72, 0, 16)
+                
+                UICorner_3.CornerRadius = UDim.new(0, 4)
+                UICorner_3.Parent = Frame
+                
+                -- Scripts:
+                
+                local function ZKVJ_fake_script() -- NumberToggles.LocalScript 
+                    local script = Instance.new('LocalScript', NumberToggles)
+                
+                    script.Parent.MouseButton1Down:Connect(function()
+                        local Sound = Instance.new("Sound", game:GetService("Workspace"))
+                        Sound.SoundId = "rbxassetid://421058925"
+                        Sound:Play()
+                        spawn(function()
+                            wait(1.3)
+                            Sound:Destroy()
+                        end)
+                    end)
+                end
+                coroutine.wrap(ZKVJ_fake_script)()
+                local function ECPD_fake_script() -- NumberToggles.LocalScript 
+                    local script = Instance.new('LocalScript', NumberToggles)
+                
+                    local var = false
+                    script.Parent.MouseButton1Down:Connect(function()
+                        if var == false then
+                            var = true
+                            local ColorTween = {}
+                            ColorTween.BackgroundColor3 = ColorChoice
+                            local ColorInfo = TweenInfo.new(0.2)
+                            local ColorToTween = game:GetService("TweenService"):Create(script.Parent.Frame, ColorInfo, ColorTween)
+                            ColorToTween:Play()
+                        else
+                            var = false
+                            local ColorTween = {}
+                            ColorTween.BackgroundColor3 = Color3.fromRGB(6, 6, 6)
+                            local ColorInfo = TweenInfo.new(0.2)
+                            local ColorToTween = game:GetService("TweenService"):Create(script.Parent.Frame, ColorInfo, ColorTween)
+                            ColorToTween:Play()
+                        end
+                    end)
+                end
+                coroutine.wrap(ECPD_fake_script)()
+                    NumberToggles.MouseButton1Down:Connect(function()
+                        pcall(callback, tonumber(TextBox.Text))
+                    end)	
+                end
+               function CreateNote(Title, Menu)
+local Regular = Instance.new("TextLabel")
+local UICorner = Instance.new("UICorner")
+local TextLabel = Instance.new("TextLabel")
+
+Regular.Name = Title
+Regular.Parent = Menus[Menu]
+Regular.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+Regular.BorderSizePixel = 0
+Regular.Position = UDim2.new(0.0454545468, 0, 0, 0)
+Regular.Size = UDim2.new(0, 336, 0, 23)
+Regular.Font = Enum.Font.SourceSans
+Regular.Text = ""
+Regular.TextColor3 = Color3.fromRGB(255, 255, 255)
+Regular.TextSize = 12.000
+
+UICorner.CornerRadius = UDim.new(0, 4)
+UICorner.Parent = Regular
+
+TextLabel.Parent = Regular
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderColor3 = Color3.fromRGB(27, 42, 53)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.0386904776, 0, 0, 0)
+TextLabel.Size = UDim2.new(0, 148, 0, 23)
+TextLabel.Font = Enum.Font.GothamSemibold
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 12.000
+	TextLabel.TextXAlignment = Enum.TextXAlignment.Left
+	TextLabel.Text = Title
+end
+
+function CreateNotification(text, duration)
+	game:GetService("StarterGui"):SetCore("SendNotification", {	Title = "Notification";	Text = text;	Duration = duration;})
+    local Sound = Instance.new("Sound", game:GetService("Workspace"))
+	Sound.SoundId = "rbxassetid://5035412139"
+	Sound:Play()
+    spawn(function()
+        wait(2)
+        Sound:Destroy()
+    end)
+end
+
+function CreateSearchBar(Menu)
+    -- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local Search = Instance.new("TextButton")
+local UICorner = Instance.new("UICorner")
+local TextLabel = Instance.new("TextLabel")
+local TextBox = Instance.new("TextBox")
+local UICorner_2 = Instance.new("UICorner")
+
+--Properties:
+
+Search.Name = "Search"
+Search.Parent = Menus[Menu]
+Search.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+Search.BorderSizePixel = 0
+Search.Position = UDim2.new(0.0454545468, 0, 0, 0)
+Search.Size = UDim2.new(0, 336, 0, 23)
+Search.Font = Enum.Font.SourceSans
+Search.Text = ""
+Search.TextColor3 = Color3.fromRGB(255, 255, 255)
+Search.TextSize = 12.000
+
+UICorner.CornerRadius = UDim.new(0, 4)
+UICorner.Parent = Search
+
+TextLabel.Parent = Search
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderColor3 = Color3.fromRGB(27, 42, 53)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.0386904776, 0, 0, 0)
+TextLabel.Size = UDim2.new(0, 148, 0, 23)
+TextLabel.Font = Enum.Font.GothamSemibold
+TextLabel.Text = "Search"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 12.000
+TextLabel.TextXAlignment = Enum.TextXAlignment.Left
+
+TextBox.Parent = Search
+TextBox.BackgroundColor3 = Color3.fromRGB(6, 6, 6)
+TextBox.Position = UDim2.new(0.193523765, 0, 0.130000234, 0)
+TextBox.Size = UDim2.new(0, 262, 0, 16)
+TextBox.Font = Enum.Font.GothamSemibold
+TextBox.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
+TextBox.PlaceholderText = "Search Here"
+TextBox.Text = ""
+TextBox.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextBox.TextSize = 10.000
+
+UICorner_2.CornerRadius = UDim.new(0, 4)
+UICorner_2.Parent = TextBox
+
+-- Scripts:
+
+local function PEWHM_fake_script() -- Search.LocalScript 
+	local script = Instance.new('LocalScript', Search)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		local Sound = Instance.new("Sound", game:GetService("Workspace"))
+		Sound.SoundId = "rbxassetid://421058925"
+		Sound:Play()
+		spawn(function()
+			wait(1.3)
+			Sound:Destroy()
+		end)
+	end)
+end
+coroutine.wrap(PEWHM_fake_script)()
+local function KIOWISK_fake_script() -- TextBox.LocalScript 
+	local script = Instance.new('LocalScript', TextBox)
+
+	local SearchBar = script.Parent
+	local Buttons = Menus[Menu]
+	
+	SearchBar:GetPropertyChangedSignal'Text':Connect(function()
+	    local Search = string.lower(SearchBar.Text)
+		for i, v in pairs(Buttons:GetChildren()) do
+			if v:IsA("GuiButton") then
+				if v ~= SearchBar.Parent then
+				if Search ~= ""  then
+					local Button = string.lower(v.TextLabel.Text)
+					if string.find(Button, Search) then
+						v.Visible = true
+					else
+						v.Visible = false
+					end
+				else
+					v.Visible = true
+				end
+				end
+			end
+		end
+	end)
+end
+coroutine.wrap(KIOWISK_fake_script)()
+end
+
+function CreateDropDown(PageName, Name)
+local DropDown = Instance.new("TextButton")
+local UICorner = Instance.new("UICorner")
+local TextLabel = Instance.new("TextLabel")
+local DropDown_2 = Instance.new("Frame")
+local Menu = Instance.new("ScrollingFrame")
+local UIListLayout = Instance.new("UIListLayout")
+local UICorner_2 = Instance.new("UICorner")
+local UICorner_3 = Instance.new("UICorner")
+local Layers = Instance.new("ImageLabel")
+
+DropDown.Name = Name
+DropDown.Parent = Menus[PageName]
+DropDown.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+DropDown.BorderSizePixel = 0
+DropDown.Position = UDim2.new(0.0454545468, 0, 0, 0)
+DropDown.Size = UDim2.new(0, 336, 0, 23)
+DropDown.Font = Enum.Font.SourceSans
+DropDown.Text = ""
+DropDown.TextColor3 = Color3.fromRGB(255, 255, 255)
+DropDown.TextSize = 12.000
+DropDown.ZIndex = 2
+
+UICorner.CornerRadius = UDim.new(0, 4)
+UICorner.Parent = DropDown
+
+TextLabel.Parent = DropDown
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderColor3 = Color3.fromRGB(27, 42, 53)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.0386904776, 0, 0, 0)
+TextLabel.Size = UDim2.new(0, 148, 0, 23)
+TextLabel.Font = Enum.Font.GothamSemibold
+TextLabel.Text = Name
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 12.000
+TextLabel.TextXAlignment = Enum.TextXAlignment.Left
+
+DropDown_2.Name = "DropDown"
+DropDown_2.Parent = DropDown
+DropDown_2.BackgroundColor3 = Color3.fromRGB(8, 8, 8)
+DropDown_2.BorderSizePixel = 0
+DropDown_2.ClipsDescendants = true
+DropDown_2.Position = UDim2.new(0, 0, 1, 0)
+DropDown_2.Size = UDim2.new(0, 336, 0, 0)
+
+Menu.Name = "Menu"
+Menu.Parent = DropDown_2
+Menu.Active = true
+Menu.BackgroundColor3 = Color3.fromRGB(8, 8, 8)
+Menu.BackgroundTransparency = 1.000
+Menu.BorderSizePixel = 0
+Menu.Position = UDim2.new(0, 0, 0.0666666701, 0)
+Menu.Size = UDim2.new(0, 336, 0, 84)
+Menu.ScrollBarThickness = 0
+
+UIListLayout.Parent = Menu
+UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout.Padding = UDim.new(0, 4)
+
+UICorner_2.CornerRadius = UDim.new(0, 4)
+UICorner_2.Parent = Menu
+
+UICorner_3.CornerRadius = UDim.new(0, 4)
+UICorner_3.Parent = Menu
+
+Layers.Name = "Layers"
+Layers.Parent = DropDown
+Layers.BackgroundTransparency = 1.000
+Layers.Position = UDim2.new(0.925595224, 0, 0, 0)
+Layers.Rotation = -90.000
+Layers.Size = UDim2.new(0, 22, 0, 23)
+Layers.Image = "rbxassetid://4370337241"
+Layers.ScaleType = Enum.ScaleType.Fit
+
+-- Scripts:
+
+local function MQKCSA_fake_script() -- DropDown.LocalScript 
+	local script = Instance.new('LocalScript', DropDown)
+
+	local button = false
+	script.Parent.MouseButton1Down:Connect(function()
+		local Sound = Instance.new("Sound", game:GetService("Workspace"))
+		Sound.SoundId = "rbxassetid://421058925"
+		Sound:Play()
+		spawn(function()
+			wait(1.3)
+			Sound:Destroy()
+		end)
+		if button == true then
+			button = false
+	
+			local RotationTween = {}
+			RotationTween.Rotation = -90
+			local Info = TweenInfo.new(0.2, Enum.EasingStyle.Sine)
+			game:GetService("TweenService"):Create(script.Parent.Layers, Info, RotationTween):Play()
+			
+			local MenuTween = {}
+			MenuTween.Size = UDim2.new(0, 336, 0, 0)
+			game:GetService("TweenService"):Create(script.Parent.DropDown, Info, MenuTween):Play()
+		else
+			button = true
+	
+			local RotationTween = {}
+			RotationTween.Rotation = 90
+			local Info = TweenInfo.new(0.2, Enum.EasingStyle.Sine)
+			game:GetService("TweenService"):Create(script.Parent.Layers, Info, RotationTween):Play()
+			
+			local MenuTween = {}
+			MenuTween.Size = UDim2.new(0, 336, 0, 90)
+			game:GetService("TweenService"):Create(script.Parent.DropDown, Info, MenuTween):Play()
+		end
+	end)
+end
+coroutine.wrap(MQKCSA_fake_script)()
+end
+
+function CreateDropOption(Name, Page, Button, callback)
+local Option = Instance.new("TextButton")
+local TextLabel = Instance.new("TextLabel")
+
+Option.Name = "Option"
+
+        Option.Parent = Menus[Page][Button].DropDown.Menu
+
+Option.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+Option.BorderSizePixel = 0
+Option.Position = UDim2.new(0.0454545468, 0, 0, 0)
+Option.Size = UDim2.new(0, 336, 0, 23)
+Option.Font = Enum.Font.SourceSans
+Option.Text = ""
+Option.TextColor3 = Color3.fromRGB(255, 255, 255)
+Option.TextSize = 12.000
+
+TextLabel.Parent = Option
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderColor3 = Color3.fromRGB(27, 42, 53)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.0386904776, 0, 0, 0)
+TextLabel.Size = UDim2.new(0, 148, 0, 23)
+TextLabel.Font = Enum.Font.GothamSemibold
+TextLabel.Text = Name
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 12.000
+TextLabel.TextXAlignment = Enum.TextXAlignment.Left
+
+Option.MouseButton1Down:Connect(function()
+    pcall(callback)
+end)
+
+end
+
+function CreateColorPicker(Page, callback)
+local ColorPicker = Instance.new("TextButton")
+local UICorner = Instance.new("UICorner")
+local TextLabel = Instance.new("TextLabel")
+local red = Instance.new("TextBox")
+local UICorner_2 = Instance.new("UICorner")
+local green = Instance.new("TextBox")
+local UICorner_3 = Instance.new("UICorner")
+local blue = Instance.new("TextBox")
+local UICorner_4 = Instance.new("UICorner")
+local Color = Instance.new("Frame")
+local UICorner_5 = Instance.new("UICorner")
+
+ColorPicker.Name = "ColorPicker"
+ColorPicker.Parent = Menus[Page]
+ColorPicker.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+ColorPicker.BorderSizePixel = 0
+ColorPicker.Position = UDim2.new(0.0454545468, 0, 0, 0)
+ColorPicker.Size = UDim2.new(0, 336, 0, 23)
+ColorPicker.Font = Enum.Font.SourceSans
+ColorPicker.Text = ""
+ColorPicker.TextColor3 = Color3.fromRGB(255, 255, 255)
+ColorPicker.TextSize = 12.000
+
+UICorner.CornerRadius = UDim.new(0, 4)
+UICorner.Parent = ColorPicker
+
+TextLabel.Parent = ColorPicker
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderColor3 = Color3.fromRGB(27, 42, 53)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.0386904776, 0, 0, 0)
+TextLabel.Size = UDim2.new(0, 148, 0, 23)
+TextLabel.Font = Enum.Font.GothamSemibold
+TextLabel.Text = "Ui Theme"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 12.000
+TextLabel.TextXAlignment = Enum.TextXAlignment.Left
+
+red.Name = "red"
+red.Parent = ColorPicker
+red.BackgroundColor3 = Color3.fromRGB(6, 6, 6)
+red.Position = UDim2.new(0.264952362, 0, 0.129999578, 0)
+red.Size = UDim2.new(0, 46, 0, 16)
+red.Font = Enum.Font.GothamSemibold
+red.PlaceholderColor3 = Color3.fromRGB(255, 0, 0)
+red.PlaceholderText = "R"
+red.Text = ""
+red.TextColor3 = Color3.fromRGB(255, 0, 0)
+red.TextSize = 10.000
+
+UICorner_2.CornerRadius = UDim.new(0, 4)
+UICorner_2.Parent = red
+
+green.Name = "green"
+green.Parent = ColorPicker
+green.BackgroundColor3 = Color3.fromRGB(6, 6, 6)
+green.Position = UDim2.new(0.423682451, 0, 0.129999578, 0)
+green.Size = UDim2.new(0, 46, 0, 16)
+green.Font = Enum.Font.GothamSemibold
+green.PlaceholderColor3 = Color3.fromRGB(85, 255, 0)
+green.PlaceholderText = "G"
+green.Text = ""
+green.TextColor3 = Color3.fromRGB(85, 255, 0)
+green.TextSize = 10.000
+
+UICorner_3.CornerRadius = UDim.new(0, 4)
+UICorner_3.Parent = green
+
+blue.Name = "blue"
+blue.Parent = ColorPicker
+blue.BackgroundColor3 = Color3.fromRGB(6, 6, 6)
+blue.Position = UDim2.new(0.58241272, 0, 0.129999578, 0)
+blue.Size = UDim2.new(0, 46, 0, 16)
+blue.Font = Enum.Font.GothamSemibold
+blue.PlaceholderColor3 = Color3.fromRGB(0, 0, 255)
+blue.PlaceholderText = "B"
+blue.Text = ""
+blue.TextColor3 = Color3.fromRGB(0, 0, 255)
+blue.TextSize = 10.000
+
+UICorner_4.CornerRadius = UDim.new(0, 4)
+UICorner_4.Parent = blue
+
+Color.Name = "Color"
+Color.Parent = ColorPicker
+Color.BackgroundColor3 = Color3.fromRGB(6, 6, 6)
+Color.Position = UDim2.new(0.758928597, 0, 0.130434781, 0)
+Color.Size = UDim2.new(0, 72, 0, 16)
+
+UICorner_5.CornerRadius = UDim.new(0, 4)
+UICorner_5.Parent = Color
+
+-- Scripts:
+
+local function CUDK_fake_script() -- ColorPicker.LocalScript 
+	local script = Instance.new('LocalScript', ColorPicker)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		local Sound = Instance.new("Sound", game:GetService("Workspace"))
+		Sound.SoundId = "rbxassetid://421058925"
+		Sound:Play()
+		spawn(function()
+			wait(1.3)
+			Sound:Destroy()
+		end)
+	end)
+end
+coroutine.wrap(CUDK_fake_script)()
+local function ZXYMR_fake_script() -- ColorPicker.LocalScript 
+	local script = Instance.new('LocalScript', ColorPicker)
+
+	local Red = script.Parent.red
+	local Green = script.Parent.green
+	local Blue = script.Parent.blue
+	
+	RedValue = 6
+	GreenValue = 6
+	BlueValue = 6
+	
+	Red:GetPropertyChangedSignal'Text':Connect(function()
+		if tonumber(Red.Text) ~= nil and tonumber(Red.Text) > 255 then
+			Red.Text = 255
+		elseif tonumber(Red.Text) ~= nil and tonumber(Red.Text) < 0 then
+			Red.Text = 0
+		end
+		
+		if tonumber(Red.Text) == nil then
+			Red.Text = ""
+		end
+		
+		RedValue = tonumber(Red.Text)
+	end)
+	
+	Green:GetPropertyChangedSignal'Text':Connect(function()
+		if tonumber(Green.Text) ~= nil and tonumber(Green.Text) > 255 then
+			Green.Text = 255
+		elseif tonumber(Green.Text) ~= nil and tonumber(Green.Text) < 0 then
+			Green.Text = 0
+		end
+	
+		if tonumber(Green.Text) == nil then
+			Green.Text = ""
+		end
+	
+		GreenValue = tonumber(Green.Text)
+	end)
+	
+	Blue:GetPropertyChangedSignal'Text':Connect(function()
+		if tonumber(Blue.Text) ~= nil and tonumber(Blue.Text) > 255 then
+			Blue.Text = 255
+		elseif tonumber(Blue.Text) ~= nil and tonumber(Blue.Text) < 0 then
+			Blue.Text = 0
+		end
+	
+		if tonumber(Blue.Text) == nil then
+			Blue.Text = ""
+		end
+	
+		BlueValue = tonumber(Blue.Text)
+	end)
+	
+	while wait() do
+		pcall(function()
+			script.Parent.Color.BackgroundColor3 = Color3.fromRGB(RedValue, GreenValue, BlueValue)
+		end)	
+	end
+end
+coroutine.wrap(ZXYMR_fake_script)()
+local function DCNDQZ_fake_script() -- ColorPicker.LocalScript 
+	local script = Instance.new('LocalScript', ColorPicker)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		ColorChoice = Color3.fromRGB(RedValue, GreenValue, BlueValue)
+		CreateNotification("Color Set")
+	end)
+end
+coroutine.wrap(DCNDQZ_fake_script)()
+ 
+end
+
+function CreateSlider(Name, Menu, Max, callback)
+local Slider = Instance.new("TextButton")
+local UICorner = Instance.new("UICorner")
+local TextLabel = Instance.new("TextLabel")
+local Frame = Instance.new("Frame")
+local UICorner_2 = Instance.new("UICorner")
+local TextButton = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local Value = Instance.new("TextLabel")
+
+Slider.Name = Name
+Slider.Parent = Menus[Menu]
+Slider.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+Slider.BorderSizePixel = 0
+Slider.Position = UDim2.new(0.0454545468, 0, 0, 0)
+Slider.Size = UDim2.new(0, 336, 0, 23)
+Slider.Font = Enum.Font.SourceSans
+Slider.Text = ""
+Slider.TextColor3 = Color3.fromRGB(255, 255, 255)
+Slider.TextSize = 12.000
+
+UICorner.CornerRadius = UDim.new(0, 4)
+UICorner.Parent = Slider
+
+TextLabel.Parent = Slider
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderColor3 = Color3.fromRGB(27, 42, 53)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.0386904776, 0, 0, 0)
+TextLabel.Size = UDim2.new(0, 148, 0, 23)
+TextLabel.Font = Enum.Font.GothamSemibold
+TextLabel.Text = Name
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 12.000
+TextLabel.TextXAlignment = Enum.TextXAlignment.Left
+
+Frame.Parent = Slider
+Frame.AnchorPoint = Vector2.new(0.5, 0.5)
+Frame.BackgroundColor3 = Color3.fromRGB(6, 6, 6)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0.619083226, 0, 0.478260875, 0)
+Frame.Size = UDim2.new(0, 237, 0, 3)
+
+UICorner_2.Parent = Frame
+
+TextButton.Parent = Frame
+TextButton.AnchorPoint = Vector2.new(0, 0.5)
+TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.BorderSizePixel = 0
+TextButton.Position = UDim2.new(0, 0, 0.5, 0)
+TextButton.Size = UDim2.new(0, 5, 0, 10)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = ""
+TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.TextSize = 14.000
+
+UICorner_3.CornerRadius = UDim.new(0, 4)
+UICorner_3.Parent = TextButton
+
+Value.Name = "Value"
+Value.Parent = Slider
+Value.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Value.BackgroundTransparency = 1.000
+Value.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Value.BorderSizePixel = 0
+Value.Position = UDim2.new(0.550595224, 0, 0.586956501, 0)
+Value.Size = UDim2.new(0, 141, 0, 9)
+Value.Font = Enum.Font.GothamSemibold
+Value.Text = "0"
+Value.TextColor3 = Color3.fromRGB(255, 255, 255)
+Value.TextXAlignment = Enum.TextXAlignment.Right
+
+-- Scripts:
+
+local function AOIMH_fake_script() -- Slider.LocalScript 
+	local script = Instance.new('LocalScript', Slider)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		local Sound = Instance.new("Sound", game:GetService("Workspace"))
+		Sound.SoundId = "rbxassetid://421058925"
+		Sound:Play()
+		spawn(function()
+			wait(1.3)
+			Sound:Destroy()
+		end)
+	end)
+end
+coroutine.wrap(AOIMH_fake_script)()
+local function CRULU_fake_script() -- Slider.LocalScript 
+	local script = Instance.new('LocalScript', Slider)
+
+	
+end
+coroutine.wrap(CRULU_fake_script)()
+local function MHQWI_fake_script() -- Frame.LocalScript 
+	local script = Instance.new('LocalScript', Frame)
+
+	local UserInputService = game:GetService("UserInputService")
+	local Dragging = false
+	script.Parent.TextButton.MouseButton1Down:Connect(function()
+		Dragging = true
+	end)
+	
+	UserInputService.InputChanged:Connect(function()
+		if Dragging then
+			local MousePos = UserInputService:GetMouseLocation()+Vector2.new(0,36)
+			local RelPos = MousePos-script.Parent.AbsolutePosition
+			local Precent = math.clamp(RelPos.X/script.Parent.AbsoluteSize.X,0,1)
+			script.Parent.TextButton.Position = UDim2.new(Precent,0,0.5,0)
+			script.Parent.Parent.Value.Text = tostring(math.floor(Precent * tonumber(Max)))
+		end
+	end)
+	
+	UserInputService.InputEnded:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 then
+			Dragging = false
+		end
+	end)
+end
+coroutine.wrap(MHQWI_fake_script)()
+
+Slider.MouseButton1Down:Connect(function()
+    pcall(callback, tonumber(Value.Text))
+end)
+
+end
+
+end
