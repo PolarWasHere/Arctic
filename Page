@@ -1,20 +1,11 @@
 Group : https://www.roblox.com/groups/12243982/ArcticGG#!/about
-Discord : discord.gg/arcticgg
+Discord : https://discord.gg/yBA3vYXBQX
 
-Arctic v2 & v2.1
+Arctic v2 & v2.1 { Aimlock, Godmode, Fly, & More )
 loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/PolarWasHere/Arctic/main/Arctic"))()
-
-Aimlock
-loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/PolarWasHere/Arctic/main/Arctic"))()
--- Go Into Combat, Scroll Down And Find Aimlock v2
 
 Auto Stomp Farm
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Karz1337/Arctic/main/ArcticAutoStompFarm"))()
+
+Group : https://www.roblox.com/groups/11247010/PolarArctic#!/about { AUTO STOMP FARM ONLY }
 -- Put Inside Auto Execute
-
-No Swagmode Admin ( OLD )
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Karz1337/Arctic/main/noswagmin"))()
-
-Arctic Hub [ 1 Game Supported ]
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Karz1337/ArcticHub/main/Loader"))()
-DoomSpire Brickbattle
