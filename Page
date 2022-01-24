@@ -7,5 +7,11 @@ loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/PolarWasHere/Arc
 Auto Stomp Farm
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Karz1337/Arctic/main/ArcticAutoStompFarm"))()
 
+--- SOON
+_G.Key = "" --// Key Goes Here
+filler
+---
+Key Page : https://direct-link.net/396447/arctic-lock-key
+
 Group : https://www.roblox.com/groups/11247010/PolarArctic#!/about { AUTO STOMP FARM ONLY }
 -- Put Inside Auto Execute
