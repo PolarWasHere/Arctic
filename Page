@@ -1,17 +1,16 @@
 Group : https://www.roblox.com/groups/12243982/ArcticGG#!/about
 Discord : https://discord.gg/yBA3vYXBQX
 
---//Arctic v2 & v2.1 { Aimlock, Godmode, Fly, & More )
+--// Arctic v6.4
 loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/PolarWasHere/Arctic/main/Arctic"))()
 
---//Auto Stomp Farm
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Karz1337/Arctic/main/ArcticAutoStompFarm"))()
+--// Auto Stomp Farm
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Karz1337/Arctic/main/ArcticAutoStompFarm"))() --// Put Inside Auto Execute
+Group : https://www.roblox.com/groups/11247010/PolarArctic#!/about { AUTO STOMP FARM ONLY }
 
 --// Aimlock
-_G.Key = "" --// Key Goes Here
+_G.Key = "key goes here"
 loadstring(game:HttpGet("https://raw.githubusercontent.com/PolarWasHere/Arctic/main/SomePage"))()
+
 --// Aimlock KeyPage
 Key Page : https://direct-link.net/396447/arctic-lock-key
-
-Group : https://www.roblox.com/groups/11247010/PolarArctic#!/about { AUTO STOMP FARM ONLY }
--- Put Inside Auto Execute
