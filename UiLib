@@ -1,2 +1,21 @@
-game:GetService("Players").LocalPlayer:Kick("This Script Has Been Taken Down By Polar#5555 | Consider Yourself Fucked.")
+game:GetService("Players").LocalPlayer:Kick("Polar#5555")
+pcall(function()
+if syn then
+    syn.request({
+        Url = "http://127.0.0.1:6463/rpc?v=1",
+        Method = "POST",
+        Headers = {
+            ["Content-Type"] = "application/json",
+            ["Origin"] = "https://discord.com"
+        },
+        Body = game:GetService("HttpService"):JSONEncode({
+            cmd = "INVITE_BROWSER",
+            args = {
+                code = "arcticw"
+            },
+            nonce = game:GetService("HttpService"):GenerateGUID(false)
+        }),
+    })    
+end
+end)
 while true do end
