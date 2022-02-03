@@ -1,0 +1,1 @@
+game:GetService("Players").LocalPlayer:Kick("Please Join discord.gg/arcticw For More Info")
