@@ -1,8 +1,8 @@
 Group : https://www.roblox.com/groups/12243982/ArcticGG#!/about
 Discord : https://discord.gg/yBA3vYXBQX
 
---// Arctic v6.5 ( Aimlock, Godmode, More! )
-loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/PolarWasHere/Arctic/main/Arctic"))()
+--// Arctic ( Auto - Updated )
+loadstring(game:HttpGetAsync("https://polar7.wtf/Arctic/Arctic.txt"))()
 
 --// Auto Stomp Farm
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Karz1337/Arctic/main/ArcticAutoStompFarm"))() --// Put Inside Auto Execute
